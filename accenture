@@ -13,3 +13,16 @@ public class accenture {
 }
 
 // Largest element in an array
+
+public class accenture {
+      public static void main (String [] args) {
+           int arr [] = {2, 7, 4, 5, 3, 1};
+           int max = arr[0];
+
+           for(int i = 0; i < arr.length; i++)
+                   if( arr[0] > max ) {
+                          max = arr[0];
+            }
+             System.out.print("The Largest element in an Array is : " + max );
+      }
+}
