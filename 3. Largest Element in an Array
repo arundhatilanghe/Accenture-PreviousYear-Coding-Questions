@@ -12,3 +12,30 @@ public class accenture {
         System.out.println(max);
     }
 }
+
+// FOR ALL TEST CASES (INPUT METHOD)
+
+import java.util.*;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //System.out.println("Enter range of array : ");
+
+        int n = sc.nextInt();
+        //System.out.println("Enter"+n+ "elements of array : ");
+        int arr [] = new int[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int max = arr[0];
+
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Output : " + max);
+    }
+}
