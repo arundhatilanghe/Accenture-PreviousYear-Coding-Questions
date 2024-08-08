@@ -11,27 +11,19 @@ public class accenture {
 }
 // FOR ALL TEST CASES (INPUT METHOD)
 
-import java.util.*;
+import java.util.Scanner;
 
-public class accenture {
+public class basic {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //System.out.println("Enter range of array : ");
+        //System.out.println("Enter the original String : ");
+        String originalString = sc.nextLine();
+        String reversedString = "";
 
-        int n = sc.nextInt();
-        //System.out.println("Enter"+n+ "elements of array : ");
-        int arr [] = new int[n];
-        for(int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        for(int i = 0; i < originalString.length(); i++) {
+            reversedString = originalString.charAt(i) + reversedString;
         }
-
-        int max = arr[0];
-
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] > max) {
-                max = arr[i];
-            }
-        }
-        System.out.println("Output : " + max);
+        //System.out.println("Reversed String is : " + reversedString);
+        System.out.println(reversedString);
     }
 }
