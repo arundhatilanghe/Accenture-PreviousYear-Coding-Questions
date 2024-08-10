@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for(int i = m; i <= n; i++) {
+            double sqr = Math.sqrt(i);
+            if(i%2 == 0) {
+                evenSum += sqr;
+            }
+            else{
+                oddSum += sqr;
+            }
+        }
+        System.out.println(evenSum - oddSum);
+    }
+}
