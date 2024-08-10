@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        char Char [] = str.toCharArray();
+
+        for(int i = 0; i < str.length(); i++) {
+            if(Char[i] == 'a') {
+                Char[i] = 'b';
+            }
+            else if(Char[i] == 'b') {
+                Char[i] = 'a';
+            }
+        }
+        System.out.println(Char);
+    }
+}
