@@ -1,0 +1,17 @@
+// Question - Assume your friend does not know the 24 hour format so convert it to 12 hour format 
+// Example Input1 -> 4 , Input2 -> 5 , Output - 8
+// Explaination - As 4 * 5 = 20 Therefore, the output should be 8 according to the 12 hour format.
+
+import java.util.Scanner;
+
+public class accenture {
+      public static void main(String [] args) {
+             Scanner sc = new Scanner(System.in);
+
+             int input1 = sc.nextInt();
+             int input2 = sc.nextInt();
+
+             int product = input1 * input2 ;
+             int format = product % 12;
+
+             System.out.print(format);
