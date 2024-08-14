@@ -15,3 +15,25 @@ public class accenture {
              int format = product % 12;
 
              System.out.print(format);
+      }
+}
+
+// APPROACH NO. 2
+
+import java.util.Scanner;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int input1 = sc.nextInt();
+        int input2 = sc.nextInt();
+
+        int product = input1 * input2;
+        if(product > 12) {
+            System.out.println(product - 12);
+        }
+        else {
+            System.out.println(product);
+        }
+    }
+}
