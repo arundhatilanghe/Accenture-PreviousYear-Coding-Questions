@@ -1,0 +1,14 @@
+public class accenture {
+    public static void main(String[] args) {
+        String str1 = "Hello, World";
+        String str2 = "World";
+
+        int index = str1.indexOf(str2);
+        if(index !=-1 ) {
+            System.out.println(index);
+        }
+        else {
+            System.out.println(-1);
+        }
+    }
+}
