@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class accenture {
+     public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+          System.out.print("Enter the number : ")
+          int input = sc.nextInt();
+
+          if(input % 7 == 0 || input / 10 == 7) {
+                System.out.print("It is a BUZZ Number.");
+          }
+          else {
+                System.out.print("It is not a BUZZ Number.");
+          }
+    }
+}
