@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+
+        char q = (char) a;
+        char r = (char) b;
+        char s = (char) c;
+        char t = (char) d;
+
+        System.out.println();
+        System.out.println(a + "-" + q);
+        System.out.println(b + "-" + r);
+        System.out.println(c + "-" + s);
+        System.out.println(d + "-" + t);
+    }
+}
