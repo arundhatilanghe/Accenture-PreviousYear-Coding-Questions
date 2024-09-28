@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.HashSet;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input1 = sc.nextLine();
+        String input2 = sc.nextLine();
+
+        HashSet <Character> letter = new HashSet <> ();
+
+        for(char input : input1.toCharArray()) {
+            letter.add(input);
+        }
+
+        for(char input : input2.toCharArray()) {
+            letter.add(input);
+        }
+
+        System.out.println(letter.size());
+    }
+}
