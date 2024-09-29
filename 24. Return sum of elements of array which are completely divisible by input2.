@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int input1 = sc.nextInt();
+        int input2 = sc.nextInt();
+
+        int arr1 [] = new int[input1];
+        for(int i = 0; i < input1; i++) {
+            arr1[i] = i + 1;
+        }
+
+        int arr2 [] = new int[input1];
+        for(int i = 0; i < input1 - 1; i++) {
+            arr2[i] = arr1[i] + arr1[i + 1]; 
+        }
+        arr2[input1 - 1] = arr1[input1 - 1] + arr1[0];
+
+        int output = 0; 
+        for(int i = 0; i < input1; i++) {
+            if(arr2[i]  % input2 == 0)  {
+                output += arr2[i];
+            }
+        }
+        System.out.println(output);
+    }
+}
