@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class accenture {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        int repetitive = 0;
+        for(int i = 1; i < str.length(); i++) {
+            if(str.charAt(i) == str.charAt(i-1)) {
+                repetitive++;
+            }
+        }
+        System.out.println(repetitive);
+    }
+}
