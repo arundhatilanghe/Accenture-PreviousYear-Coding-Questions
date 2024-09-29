@@ -1,0 +1,13 @@
+import java.util.Arrays;
+public class accenture {
+    public static void main(String[] args) {
+        int input1 = 3;
+        int arr [] = {3, 5, 1};
+
+        Arrays.sort(arr);
+        
+        int sum = arr[0] + arr[1];
+
+        System.out.println(sum);
+    }
+}
