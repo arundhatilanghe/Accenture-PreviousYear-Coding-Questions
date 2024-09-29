@@ -1,0 +1,14 @@
+public class accenture {
+    public static void main(String[] args) {
+        int input1 = 2;
+        int input2 = 3;
+        int input3 = 100;
+
+        int term = input1;
+
+        while(term <= input3) {
+            System.out.println(term + " ");
+            term *= input2;
+        }
+    }
+}
