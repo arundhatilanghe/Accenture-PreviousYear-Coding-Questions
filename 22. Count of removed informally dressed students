@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class accenture {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		//int N = sc.nextInt();
+		String str = sc.nextLine();
+		//System.out.println(str);
+
+		int firstIndex = str.indexOf('I');
+		int secondIndex = str.indexOf('I', firstIndex + 1);
+          
+        int sum = str.length() - secondIndex;
+        System.out.println(sum);
+	}
+}
